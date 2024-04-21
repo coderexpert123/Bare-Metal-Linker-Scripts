@@ -1,0 +1,47 @@
+
+ code (instruction) - flash memory ROM 
+ data -  RAM (Read and write ) , data is nothing but var it can change anytime
+ that why stored in RAM 
+
+
+.data -- contain intilized data 
+.rodata -- contain read only data
+.bss -- contain data which is unintilized 
+.text-- this section contain code and instruction 
+user defined section --  contain data / code which programmer demenad to 
+put in user defined section 
+
+ some special section -- some specail section added by the comopiler ,
+ contain some special data 
+
+
+1.Now .o creted of led and main program 
+
+2.Linker and locator combile all section of bothe the .o file 
+
+3.Storage of final executable in code memeory [ROM and Flash]
+
+4. Code Flash memeory section 
+unused code meoery 
+.data
+.rowdata 
+.text
+vector table 
+
+5.copied code .data section Flash (Code memoery)  to SRAM(Data Memoey )
+
+6.Type of Data 
+
+a)global unint data
+b)local uninit data
+c)global init data
+d)local init data
+e)local unint static  data
+f)global unit static data
+g)global init static data
+h)local inint static data 
+
+7.unitize goes to .bss and init goes to .data section , we can define this in ours
+startup file and also need to defined boundries from where .bss start and end 
+
+8.Write startuo ile for Target 
